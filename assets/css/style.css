@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@800&family=Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    color: #000;
+}
+a, p{
+    font-family: 'Special Elite', cursive;
+    text-decoration: unset;
+}
+h1,h2,h3,h4{
+    font-family: 'Exo', sans-serif;
+}
+ul{
+    display: flex;
+    list-style: none;
+    gap: 2em;
+}
+a:hover{
+    text-decoration: underline;
+}
+p{
+    font-size: 1.15em;
+    line-height: 1.1;
+    margin-bottom: 1em;
+}
+h2{
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 1.7em;
+    margin-top: 1em;
+}
+h4{
+    font-size: 1.2em;
+    margin-bottom: .3em;
+}
+.textBox{
+    border: 1px solid #000;
+    margin-top: 1em;
+    padding: 1em;
+}
+/* ###### */
+/* HEADER */
+/* ###### */
+header{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #fff;
+    padding-right: 2em;
+}
+
+/* #### */
+/* MAIN */
+/* #### */
+
+/* home */
+#home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/bg.jpeg) no-repeat center/cover;
+}
+#home img{
+    width: 60%;
+}
+/* hello */
+#hello{
+    height: 120vh;
+    background: url(../img/bridge_1.jpg) no-repeat center/cover;
+}
+#hello article{
+    height: 60vh;
+    background-image: url(../img/beans_icon.png);
+    background-size: cover;
+    grid-template-columns: 5% 47% 53%;
+    grid-template-areas: ". text .";
+}
+#hello article div{
+    grid-area: text;
+}
+#hello article div h1{
+    margin-bottom: .3em;
+    font-size: 3em;
+}
+/* menu */
+#menu{
+    height: 170vh;
+    background: url(../img/bridge_2.jpg) no-repeat center/cover;
+}
+#menu>div{
+    height: 120vh;
+    background-image: url(../img/cake_icon.png);
+    background-size: contain;
+}
+#menu .text{
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+}
+#menu .text figcaption{
+    cursor: pointer;
+}
+#menu .text img{
+    width: 15%;    
+}
+#menu .text p{
+    margin: 0;
+}
+/* story */
+#story{
+    height: 120vh;
+    background: url(../img/bridge_3.jpg) no-repeat center/cover;
+}
+#story>div{
+    height: 70vh;
+    grid-template-columns: 20% 35.5% 24.5% 20%;
+    grid-template-areas: ". story storyImg .";
+    justify-content: center;
+}
+#story>div article:nth-of-type(1){
+    grid-area: story;
+}
+#story>div article:nth-of-type(2){
+    grid-area: storyImg;
+}
+/* catering */
+#catering{
+    height: 110vh;
+    background: url(../img/bridge_4.jpeg) no-repeat center/cover;
+}
+#catering>div{
+    height: 60vh;
+    background-image: url(../img/pie_icon.png);
+    background-position: right;
+    background-size: contain;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: ". cateringImg catering .";
+    justify-content: center;
+}
+#catering>div article:nth-of-type(1){
+    grid-area: cateringImg;
+}
+#catering>div article:nth-of-type(2){
+    grid-area: catering;
+}
+/* cakes */
+#cakes{
+    height: 60vh;
+    background-image: url(../img/muffin_icon.png);
+    background-size: contain;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: ". cakesImg cakes .";
+    justify-content: center;
+}
+#cakes article:nth-of-type(1){
+    grid-area: cakesImg;
+}
+#cakes article:nth-of-type(2){
+    grid-area: cakes;
+}
+/* main general */
+#hello,#menu,#story,#catering{
+    background-attachment: fixed;
+}
+#hello article, #menu>div, #story>div, #catering>div, #cakes{
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: left;
+    display: grid;
+    align-items: center;
+}
+#story>div img, #catering>div img, #cakes img{
+    width: 90%;
+}
+#story>div, #catering>div, #cakes{
+    gap: 2em;
+}
+/* ###### */
+/* FOOTER */
+/* ###### */
+footer{
+    background-color: #000;
+    text-align: center;
+    padding: 2em 0;
+}
+footer h4, footer p,footer a{
+    color: #fff;
+}
+footer .social{
+    width: 5%;
+    margin: 0 auto;
+}
+footer a img{
+    width: 50%;
+}
+footer .today{
+    width: 100%;
+}
